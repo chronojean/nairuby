@@ -45,7 +45,7 @@
     .checkbox-grid label{display:flex;gap:8px;align-items:center;padding:8px;border-radius:8px;border:1px solid transparent}
 
     table{width:100%;border-collapse:collapse;margin-top:8px}
-    th,td{padding:8px;border:1px solid #E6EEF8;font-size:13px}
+    th,td{border:1px solid #E6EEF8;font-size:13px}
     th{background:linear-gradient(180deg,#EAF5FF,#DFF0FF);color:var(--accent);text-align:left}
 
     .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
@@ -145,7 +145,7 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
 
         <div class="col-12">
           <label class="field-label">Nombres y Apellidos</label>
-          <input class="field" type="text" name="nombres" >
+          <input class="field" type="text" name="nombres">
         </div>
 
         <div class="col-4">
@@ -180,7 +180,7 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
         <div class="col-12 section-title"><h2>2. Antecedentes Familiares</h2></div>
         <div class="col-12">
           <label class="field-label">Antecedentes Familiares (describa)</label>
-          <textarea class="field" name="ant_familiares" ></textarea>
+          <textarea class="field" name="ant_familiares"></textarea>
         </div>
       </section>
 
@@ -192,7 +192,7 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
             <label><input type="checkbox" name="motivo_control"> <span>Control</span></label>
             <label><input type="checkbox" name="motivo_sangramiento"> <span>Sangramiento en las encías</span></label>
             <label><input type="checkbox" name="motivo_restauracion"> <span>Restauración Protésica</span></label>
-            <label style="display:flex;gap:8px;align-items:center"><span>Otro:</span><input type="text" name="motivo_otro"></label>
+            <label style="display:flex;gap:8px;align-items:center; grid-column:1/5"><span>Otro:</span><input type="text" name="motivo_otro"></label>
           </div>
         </div>
       </section>
@@ -201,7 +201,7 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
         <div class="col-12 section-title"><h2>4. Enfermedad Actual</h2></div>
         <div class="col-12">
           <label class="field-label">Describa la enfermedad actual / motivo</label>
-          <textarea class="field" name="enfermedad_actual" ></textarea>
+          <textarea class="field" name="enfermedad_actual"></textarea>
         </div>
       </section>
 
@@ -250,7 +250,7 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
             <label><input type="checkbox" name="muerde_objetos"> <span>Muerde objetos con los dientes</span></label>
             <label><input type="checkbox" name="apretamiento"> <span>Apreta los dientes</span></label>
             <label><input type="checkbox" name="respira_boca"> <span>Respiración bucal</span></label>
-            <label style="display:flex;align-items:center;gap:8px"><span>Fuma:</span><input class="field" type="number" name="fuma_cig" min="0"></label>
+            <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" name="respira_boca"><span>Fuma:</span><input class="field" type="number" name="fuma_cig" min="0"></label>
             <label><input type="checkbox" name="consume_citricos"> <span>Consume alimentos cítricos</span></label>
           </div>
         </div>
@@ -541,7 +541,7 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
       <section class="grid">
         <div class="col-12 section-title"><h2>9. Observaciones</h2></div>
         <div class="col-12">
-          <textarea class="field" name="observaciones" ></textarea>
+          <textarea class="field" name="observaciones"></textarea>
         </div>
       </section>
 
@@ -556,7 +556,17 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
           <input class="field" type="text" name="firma">
         </div>
       </section>
-
+        <section class="grid">
+        <div class="col-12 section-title"><h2>11. Firma del Paciente</h2></div>
+        <div class="col-6">
+          <label class="field-label">Nombre del Paciente/Tutor legal</label>
+          <input class="field" type="text" name="nombre_odontologo">
+        </div>
+        <div class="col-6">
+          <label class="field-label">Firma</label>
+          <input class="field" type="text" name="firma">
+        </div>
+      </section>
       <div class="actions" style="display:none">
         <button type="button" class="ghost" onclick="window.print()">Imprimir</button>
         <button type="button" class="pdf" onclick="generatePDF()">Guardar PDF</button>
