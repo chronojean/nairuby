@@ -125,56 +125,57 @@ input[type="date"]:focus::-webkit-datetime-edit-text {
     <form id="hc-form" autocomplete="off">
 
       <section class="grid" aria-labelledby="identidad">
-        <div class="col-12 section-title"><h2 id="identidad">1. Datos de Identificación</h2></div>
+  <div class="col-12 section-title"><h2 id="identidad">1. Datos de Identificación</h2></div>
 
-        <div class="col-3">
-          <label class="field-label">Fecha (registro)</label>
-          <input class="field" type="date" name="fecha">
-        </div>
-        <div class="col-3">
-          <label class="field-label">Edad</label>
-          <input class="field" type="number" name="edad" min="0">
-        </div>
-        <div class="col-6">
-          <label class="field-label">Sexo</label>
-          <div class="inline" role="radiogroup" aria-label="Sexo">
-            <label class="chip"><input type="radio" name="sexo" value="M" style="margin-right:8px"> M</label>
-            <label class="chip"><input type="radio" name="sexo" value="F" style="margin-right:8px"> F</label>
-          </div>
-        </div>
+  <div class="col-3">
+    <label class="field-label">Fecha (registro)</label>
+    <input class="field" type="date" name="fecha">
+  </div>
+  <div class="col-3">
+    <label class="field-label">Edad</label>
+    <input class="field" type="number" name="edad" min="0">
+  </div>
+  <div class="col-6">
+    <label class="field-label">Sexo</label>
+    <div class="inline" role="radiogroup" aria-label="Sexo">
+      <label class="chip"><input type="radio" name="sexo" value="M" style="margin-right:8px"> M</label>
+      <label class="chip"><input type="radio" name="sexo" value="F" style="margin-right:8px"> F</label>
+    </div>
+  </div>
 
-        <div class="col-12">
-          <label class="field-label">Nombres y Apellidos</label>
-          <input class="field" type="text" name="nombres">
-        </div>
+  <div class="col-6">
+    <label class="field-label">Nombres y Apellidos</label>
+    <input class="field" type="text" name="nombres">
+  </div>
+  <div class="col-6">
+    <label class="field-label">Cédula de Identidad</label>
+    <input class="field" type="text" name="ci">
+  </div>
 
-        <div class="col-4">
-          <label class="field-label">C.I.</label>
-          <input class="field" type="text" name="ci">
-        </div>
-        <div class="col-8">
-          <label class="field-label">Dirección</label>
-          <input class="field" type="text" name="direccion">
-        </div>
+  <div class="col-12">
+    <label class="field-label">Dirección</label>
+    <textarea class="field" name="direccion" rows="2"></textarea>
+  </div>
 
-        <div class="col-6">
-          <label class="field-label">Lugar de Nacimiento</label>
-          <input class="field" type="text" name="lugar">
-        </div>
-        <div class="col-6">
-          <label class="field-label">Fecha de Nacimiento</label>
-          <input class="field" type="date" name="fecha_nac">
-        </div>
+  <div class="col-6">
+    <label class="field-label">Lugar de Nacimiento</label>
+    <input class="field" type="text" name="lugar">
+  </div>
+  <div class="col-6">
+    <label class="field-label">Fecha de Nacimiento</label>
+    <input class="field" type="date" name="fecha_nac">
+  </div>
 
-        <div class="col-6">
-          <label class="field-label">Teléfono (habitación)</label>
-          <input class="field" type="text" name="tel_hab">
-        </div>
-        <div class="col-6">
-          <label class="field-label">Celular</label>
-          <input class="field" type="text" name="celular">
-        </div>
-      </section>
+  <div class="col-6">
+    <label class="field-label">Teléfono (habitación)</label>
+    <input class="field" type="text" name="tel_hab">
+  </div>
+  <div class="col-6">
+    <label class="field-label">Celular</label>
+    <input class="field" type="text" name="celular">
+  </div>
+</section>
+
 
       <section class="grid">
         <div class="col-12 section-title"><h2>2. Antecedentes Familiares</h2></div>
